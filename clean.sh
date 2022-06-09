@@ -2,7 +2,7 @@
 
 source tf_env/bin/activate # tmp
 
-read -p "Would you like to remove all python libraries associated to tf? [y/n]: " resp
+read -p "Would you like to remove all python libraries associated to tf? [y/n default n]: " resp
 resp=${resp:-N}
 
 if [ ${resp^^} == 'Y' ]; then
