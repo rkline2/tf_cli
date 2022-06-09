@@ -3,12 +3,17 @@ from setuptools import find_packages, setup
 with open("requirements.txt", "r") as f:
     install_requires = f.readlines()
 
+with open("README.md", "r") as f:
+    long_description = f.read()
+
 setup(
-    name="tf",
-    version="0.0.1",
-    description="This contains all of the files written for AWS terraform",
+    name="tf_cli",
+    version="0.0.3",
+    description="This contains a CLI for AWS terraform",
     author="Rooklyn Kline",
-    author_email="rkline2@umbc.edu",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/rkline2/tf_cli",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     package_data={'':['scripts/*']},
@@ -26,4 +31,9 @@ setup(
             "wheel==0.37.0",
         ]
     },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU Affero General Public License v3",
+        "Operating System :: POSIX :: Linux",
+    ]
 )

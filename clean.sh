@@ -13,7 +13,7 @@ if [ ${resp^^} == 'Y' ]; then
 fi
 
 echo -e "\nUninstalling tf..."
-pip uninstall -y tf
+pip uninstall -y tf_cli
 
 echo -e "\nDestroying venv... " # tmp
 rm -rf tf_env/  
