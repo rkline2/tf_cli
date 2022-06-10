@@ -20,7 +20,7 @@ rm -rf tf_env/
 
 echo -e "Clearing cache files..."
 rm -rf build/ dist/
-rm -rf src/tf.egg-info/
+rm -rf src/tf_cli.egg-info/
 
 deactivate # tmp
 

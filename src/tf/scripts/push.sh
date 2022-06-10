@@ -1,7 +1,11 @@
 #!/bin/bash
 
-echo "Creating infrastructure..."
+clean_cmd="tf --clean"
+
+echo -e "Creating infrastructure..."
 terraform apply
 
-echo "Inspecting state..."
+echo -e "\nInspecting state..."
 terraform show
+
+echo -e "\nRemember to clean unwanted files by running \"${clean_cmd}\""

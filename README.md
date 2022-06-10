@@ -10,7 +10,7 @@ Options:
   -b, --build   Test and fmt .tf code.
   -c, --commit  Make commits to local repo.
   -p, --push    Push tf data to server.
-  -c, --clean   Clean unnecessary tf files.
+  --clean       Clean unnecessary tf files.
   --help        Show this message and exit.
 ```  
 

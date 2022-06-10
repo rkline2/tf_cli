@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Initializing the directory..."
+echo -e "Initializing the directory..."
 terraform init
 
-echo "Formating the configuration..."
+echo -e "\nFormating the configuration..."
 terraform fmt
 
-echo "Validating the configuration..."
+echo -e "\nValidating the configuration..."
 terraform validate
