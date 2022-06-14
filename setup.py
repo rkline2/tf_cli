@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="tf_cli",
-    version="0.0.8",
+    version="0.0.9",
     description="This contains a CLI for AWS terraform",
     author="Rooklyn Kline",
     author_email="",
